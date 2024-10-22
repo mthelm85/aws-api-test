@@ -8,6 +8,8 @@ const app = express();
 app.use(cors());
 app.use(express.json()); // For parsing application/json
 
+console.log('WTF');
+
 // Create a pool to manage connections
 const pool = new Pool({
   host: process.env.DB_HOST,
